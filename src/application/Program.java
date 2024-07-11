@@ -5,6 +5,7 @@ public class Program {
         System.out.println("***** BEM VINDO AOS JOGOS POPUNHA *****");
         System.out.println();
 
-        GameSelector.init();
+        GameSelector.gameSelector();
+
     }
 }

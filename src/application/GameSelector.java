@@ -2,7 +2,20 @@ package application;
 
 public class GameSelector {
 
-    public static void init(){
-        GameList.list();
+    static GameList gameList = new GameList();
+
+    public static void addGameList() {
+        gameList.addGame("Par ou impar");
+        gameList.addGame("Adivinhe o número");
+        gameList.addGame("teste");
+        gameList.addGame("teste");
     }
+
+    public static void gameSelector(){
+        addGameList();
+        gameList.printGames();
+    }
+
+
+
 }
